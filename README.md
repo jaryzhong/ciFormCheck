@@ -16,7 +16,7 @@ how to use it?
 只要设置需要校验input的两个属性fccheck和fcname，并调用插件就可以了
 ```
 <script type="text/javascript" src="jquery-1.10.2.js"></script>
-<script type="text/javascript" src="jquery.ciFormCheck.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="jquery.ciFormCheck.min.js"></script>
 <form id="form">
 <input type="text" fccheck="empty" fcname="用户名">
 <input type="text" fccheck="empty" fcname="年龄">
