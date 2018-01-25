@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang=en>
+
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta content="" name="description" />
+<title>csFormCheckJs demo</title>
+<link href=bootstrap.min.css rel=stylesheet type=text/css />
+<style>.warringInputBlue{border:2px solid blue;}</style>
+<style>.warringInputRed{border:2px solid red;}</style>
+<style>.warringInputGreen{border:2px solid green;}</style>
+</head>
+
+<body>
+<div>
+<form action="" id="csForm">
+<div>用户名<input type="text" id="userName" fccheck="empty" fcname="用户名"></div>
+<div>年龄<input type="text" id="age" fccheck="empty&&int" fcrange="(x>=1&&x<=18)||(x>=60&&x<=200)" fcname="年龄"></div>
+<div>资产<input type="text" fccheck="empty&&float" fcscale="2" fcrange="x>=0&&x<=9999999999999" fcname="资产" ></div>
+<div>电话<input type="text" fccheck="empty&&number" fcname="电话" fcminlength="7" fcmaxlength="11" fcmsg="电话不能为空且长度必须是7~11位数字"></div>
+<div>日期<input type="text" fccheck="empty&&regExp" fcname="日期" fcexpression="^[0-9]{4}-(((0[13578]|(10|12))-(0[1-9]|[1-2][0-9]|3[0-1]))|(02-(0[1-9]|[1-2][0-9]))|((0[469]|11)-(0[1-9]|[1-2][0-9]|30)))$"></div>
+<div>有权限<select fccheck="empty&&int" fcname="有权限" id="access"><option value="">-请选择-</option><option value="1">是</option><option value="0">否</option></select></div>
+<div>性别<input type="radio" fccheck="empty"  fcname="性别" name="sex" value="1">男&nbsp;<input type="radio" fccheck="empty"  fcname="性别" name="sex" value="2">女</div>
+<div>爱好<input type="checkBox" fccheck="empty" value="1" fcname="爱好" name="fav">唱歌&nbsp;<input type="checkBox" fccheck="empty" value="2" fcname="爱好" name="fav">写作</div>
+<div>备注<textarea fccheck="empty" fcname="备注" id="remark"></textarea></div>
+<div>文件<input type="file" fccheck="empty" fcname="文件"></div>
+<button type="button" onclick="submitForm();">提交</button>
+<button type="button" onclick="removeCheck();">解除年龄非空校验</button>
+</form>
+</div>
+<div class="modal fade" id="messageModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="exampleModalLabel">消息</h4>
+      </div>
+      <div class="modal-body" id="message">
+       
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">确认</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="../jquery-1.10.2.js"></script>
+<script type="text/javascript" src="../jquery.ciFormCheck.min.js" charset="UTF-8"></script>
+<script type="text/javascript" src="bootstrap.min.js"></script>
+<script type="text/javascript" src="demo.js"></script>
+</body>
+</html>
