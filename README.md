@@ -14,7 +14,8 @@ how to use it?
 导入jquery.js，和jquery.ciFormCheck.min.js
 如要校验下面表单用户名与年龄不能为空时
 只要设置需要校验input的两个属性fccheck和fcname，并调用插件就可以了
-```<script type="text/javascript" src="jquery-1.10.2.js"></script>
+```
+<script type="text/javascript" src="jquery-1.10.2.js"></script>
 <script type="text/javascript" src="jquery.ciFormCheck.min.js" charset="UTF-8"></script>
 <form id="form">
 <input type="text" fccheck="empty" fcname="用户名">
@@ -25,5 +26,7 @@ var form = $("#form").ciFormCheck();
 if(form.checkForm()){
 	//do submit
 }
-</script>```
+</script>
+```
+
 就可以省去很多表单校验的代码了
