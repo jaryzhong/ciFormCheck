@@ -10,7 +10,7 @@ what can I do?
 
 how to use it?
 --------------
-1.快速上手<br/>
+###1.快速上手<br/>
 导入jquery.js，和jquery.ciFormCheck.min.js<br/><br/>
 如要校验下面表单用户名与年龄不能为空时<br/>
 只要设置需要校验input的两个属性fccheck和fcname，并调用插件就可以了<br/>
@@ -30,3 +30,5 @@ if(form.checkForm()){
 ```
 
 就可以省去很多表单校验的代码了
+
+###2.fccheck属性值列表
