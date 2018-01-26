@@ -66,7 +66,7 @@ var ciFormCheck = $("#csForm").ciFormCheck(options);
 ciFormCheck.checkForm();
 ```
 ### 4.插件对象提供的方法列表
-* checkForm():校验表单，表单提交时，可以调用此方法用来校验表单
+* checkForm():校验表单，表单提交时，可以调用此方法用来校验表单，表单通过校验时，返回true，有数据不符合规则时，返回false
 * removeCheck($input):删除对某个input的校验，$input为要删除校验的jquery对象
 
 ### 5.最后
