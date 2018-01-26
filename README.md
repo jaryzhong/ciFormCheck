@@ -34,8 +34,9 @@ if(form.checkForm()){
 ### 2.fccheck属性值列表与可以设置的dom属性
 * empty:表示非空校验,如果类型是radio和checkBox的非空判断，一组的radio或checkBox，需要设置一样的name;select标签的非空判断，第一项option value必须设置为""<br/>
 * int:表示整数校验 有fcrange范围属性,值用表达式如：x>=0&&x<=999999999999，也可以写成x>100||x<80，甚至可以(x>0&&x<18)||(x>60&&x<200),作数据大小范围判断<br/>
-* number:表示全部数字校验 有fclength,fcminlength,fcmaxlength三个长度属性,字符长度判断<br/>
-* string:表示字符校验 有fclength,fcminlength,fcmaxlength三个长度属性,字符长度判断 fclength='11' fcminlength='16' fcmaxlength='19'<br/>
+* number:表示全部数字校验 有fclength,fcminlength,fcmaxlength三个长度属性,fclength='11' fcminlength='16' fcmaxlength='19'字符长度判断<br/>
+* number:表示全部数字校验 有fclength,fcminlength,fcmaxlength三个长度属性,字符长度判断,<br/>
+* string:表示字符校验 有fclength,fcminlength,fcmaxlength三个长度属性,字符长度判断<br/>
 * float:表示浮点型校验 有fcrange范围属性,数据大小范围判断 有fcscale精度属性，只作格式化，不作fcscale精度判断<br/>
 * email:表示邮箱校验<br/>
 * multiEmil:表示多个邮箱校验 有fcsplit字符切隔符号属性，用来切隔每个邮箱<br/>
