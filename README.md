@@ -42,7 +42,7 @@ if(form.checkForm()){
 * regExp:表示正则校验,有fcexpression属性，用来传入一个判断的正则，插件会调用regExp.test(fcexpression的值)判断<br/>
 
 ### 3.options参数列表
-插件可以用 $("#form").ciFormCheck()来调用，也可以用options参数来调用，用来自定义你想要的效果，比如自定义input校验后样式，自定义弹出消息的方式等等
+要校验的dom设置好fccheck属性后，就可以用 $("#form").ciFormCheck()来调用插件，也可以用options参数来调用，用来自定义你想要的效果，比如自定义input校验后样式，自定义弹出消息的方式等等
 options参数如下：
 * warringFlag:false,//校验不通过时是否需要输入框警告<br/>
 * warringClass:"csFormInput",//，传入样式名，可以自定义校验不通过时输入框警告样式，默认为边框为红色<br/>
